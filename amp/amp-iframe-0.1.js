@@ -32,3 +32,7 @@ c);void 0!==e&&a.element.setAttribute("width",e)},function(){}):a.user().error("
 })});
 //# sourceMappingURL=amp-iframe-0.1.js.map
 
+/*!
+ * custom edit for fix imges blogger code img to amp-img
+ */
+$('.thumbnail').find('img').replaceWith(function () { return '<amp-img src="'+this.src+'" width="1080" height="610" layout="responsive" alt="'+this.alt+'"></amp-img>' });
