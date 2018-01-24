@@ -39,12 +39,13 @@ trtr{border:1px solid#000}
 </head>
 <body>
 <div id="table-outer">
-<p><b>Sitemap Daftar Isi Blog</b></p>
-<table><tbody> <tr><td><label for="feed-order">Urutkan artikel berdasarkan:</label></td>
-<td><select id="feed-order"> <option selected="" value="published">Artikel terbaru</option> <option value="updated">Artikel yang terakhir di update</option> </select></td></tr>
-<td><select disabled="" id="label-sorter"> <option selected="">Silakan Tunggu...</option> </select></td></tr>
-<tr><td><label for="feed-q">Cari artikel dengan kata kunci:</label></td>
-<td><form id="post-searcher"> <input id="feed-q" type="text" placeholder="Ketik dan tekan ENTER"/> </form> </td></tr>
+<table><tbody>
+<tr><td><label for="feed-order">Urutkan artikel berdasarkan:</label></td> <td><select id="feed-order"> <option selected="" value="published">Artikel terbaru</option> <option value="updated">Artikel yang terakhir di update</option> </select></td></tr>
+<tr><td><label for="label-sorter">Filter artikel berdasarkan kategori:</label></td> <td><select disabled="" id="label-sorter"> <option selected="">Loading....</option> </select></td></tr>
+<tr><td><label for="feed-q">Cari artikel dengan kata kunci:</label></td> <td><form id="post-searcher">
+<input id="feed-q" type="text" placeholder="Ketik dan tekan ENTER"/>
+</form>
+</td></tr>
 </tbody></table>
 </div>
 <header id="result-desc">
