@@ -1,22 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
+<meta charset="utf-8">
+<title>Related Posts</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400italic,400,500,500italic,700,700italic,900%7CMaterial+Icons' rel='stylesheet' type='text/css'/>
+<style>
+body {
+  background-color:white;
+  margin:0;
+  padding:0;
+  color:#212121;
+  font-family: Roboto, Arial, sans-serif;
+}
+a {
+  color:#212121;
+  text-decoration:none;
+}
+a:hover {color:#0379C4}
+.related-post {
+margin:20px 0 0 -25px;
+padding: 0;
+overflow:hidden;
+}
+.related-post h4 {
+font-weight: 700;
+font-size:120%;
+margin:0 0 10px 25px;
+}
+/* Style 3 */
+ul.related-post-style-3{
+list-style:none;
+margin:0;
+padding-left:16px;
+width:100%;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+}
+.related-post-style-3 li a{
+color: #212121;
+font-weight:400 !important;
+}
+.related-post-style-3 li a:hover{
+color: #0379C4;
+}
+.related-post-style-3 .related-post-item {
+display:block;
+float:left;
+width:46.5%;
+height:auto;
+padding:0 15px 30px 10px;
+margin-bottom:-989px;
+padding-bottom:999px;
+list-style:none;
+word-wrap:break-word;
+}
+.related-post-style-3 .related-post-item:first-child {border-left:none}
+.related-post-style-3 .related-post-item:last-child {padding-right:0}
+.related-post-style-3 .related-post-item-thumbnail {
+display:block;
+margin:10px 0 10px;
+width:100%;
+height:auto;
+max-width:none;
+background-color:transparent;
+border:none;
+padding:0;
+}
+@media screen and (max-width:732px){
+.related-post-style-3 .related-post-item
+{width:46%;}
+}
+@media screen and (max-width:668px){
+.related-post-style-3 .related-post-item
+{width:45.6%;}
+}
+@media screen and (max-width:569px){
+.related-post-style-3 .related-post-item
+{width:44.9%;}
+}
+@media screen and (max-width:420px){
+.related-post-style-3 .related-post-item
+{width:96%;height:auto;position: relative;border-bottom: 1px solid #e1e1e1}
+.related-post-style-3 .related-post-item-thumbnail{
+width: 35%}
+.related-post-style-3 .related-post-item-tooltip{
+margin-left: 38%;position: absolute;top: 10px;}
+}
+@media screen and (max-width:320px){
+.related-post-style-3 .related-post-item-thumbnail{
+margin:5px 0 5px;}
+}
+</style>
 </head>
 <body>
-<script type="text/javascript">
-/*!
- * Blogger Related Posts Widget v1.0.4
- * https://github.com/flashponsel/amp/amp-related-blogger.html
- * Copyright (c) 2018 Flashponsel
- * Released under the MIT license
- */
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('(r(){f(3.D===1W){C}P e={},B,z=[],i,7,y;e.M=(L A==="16"&&A.M)||1o;e.J=(L A==="16"&&A.J)||5;B=3.D("x[K=1A]").l;f(/\\S\\d{4}\\S\\d{2}\\S/.1h(B)===V){C}p(i=0,7=3.1K("a[K=1M]");i<7.s;i++){z.N(1a(7[i].l.1b("/").1c()))}12=r(c){P d=[],i,j,k,6,g,7,9,R,m,u,o,a,w,v;p(i=0,6=c.1d.1e;i<6.s;i++){g={E:6[i].E.$t,F:1p 1w(6[i].F.$t),9:[],n:0};p(j=0,7=6[i].x;j<7.s;j++){f(7[j].K==="1X"){g.x=7[j].l;U}}f(g.x===B){1L}p(j=0,9=6[i].10;j<9.s;j++){g.9.N(9[j].T);p(k=0;k<z.s;k++){f(z[k]===9[j].T){g.n++;U}}}f(6[i].H$G){g.Q={O:6[i].H$G.W,X:6[i].H$G.X,Y:6[i].H$G.Y}}d.N(g)}d.1f(r(a,b){C(b.n-a.n)||(b.F-a.F)});d=d.1g(0,e.J);R=r(){f(L Z==="r"){P a=1i;Z("1j",{1k:"1l",1m:"1n I 11",1q:"I 1r 1s",1t:a.l,1u:r(){1v.l=a.l}});C V}};m=3.h("m");m.1x="1y-1z-13";m.1B="<14>I 11</14>";u=3.h("u");p(i=0;i<d.s;i++){o=3.h("o");a=3.h("a");a.l=d[i].x;a.E=d[i].n+" 1D "+(d[i].n===1?"10":"9");a.1E=R;w=3.h("w");f(d[i].Q){w.1F("1G","1H: W("+d[i].Q.O+") 1I-1J 15 15;")}a.8(w);a.8(3.17(d[i].E));v=3.h("v");v.8(3.17(d[i].9.18(", ")));o.8(a);o.8(v);u.8(o)}m.8(u);3.D(".1N").8(m)};y=3.h("y");y.O="/1O/13/1P?1Q=1R&1S=12&1T-1U="+e.M+"&q="+1V(\'19:"\'+z.18(\'" | 19:"\')+\'"\');3.D("1C").8(y)})();',62,122,'|||document|||entries|links|appendChild|categories||||||if|item|createElement||||href|div|count|li|for||function|length||ul|small|span|link|script|postCategories|bloggerRelatedPosts_config|postLink|return|querySelector|title|updated|thumbnail|media|Related|maxPostsToDisplay|rel|typeof|maxPostsToFetch|push|src|var|icon|clickHandler|x2F|term|break|false|url|width|height|ga|category|Posts|bloggerRelatedPosts_callback|posts|h4|center|object|createTextNode|join|label|decodeURIComponent|split|pop|feed|entry|sort|slice|test|this|send|hitType|event|eventCategory|Blogger|100|new|eventAction|Post|Clicked|eventLabel|hitCallback|location|Date|id|blogger|related|canonical|innerHTML|head|common|onclick|setAttribute|style|background|no|repeat|querySelectorAll|continue|tag|post|feeds|summary|alt|json|callback|max|results|encodeURIComponent|undefined|alternate'.split('|'),0,{}))
+
+<div id="related-post" class="related-post"></div>
+<script>
+function getQueryVariable(variable) {
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i=0;i<vars.length;i++) {
+    var pair = vars[i].split("=");
+    if(pair[0] == variable){return pair[1];}
+  }
+  return(false);
+}
+var labelArray = [getQueryVariable("label")],
+    relatedPostConfig = {
+	homePage: getQueryVariable("url"),	
+        numPosts: 4,
+        summaryLength: 0,
+        widgetStyle: 3,
+        callBack: function() {}
+    };
 </script>
-<script type="text/javascript">
-relatedPostsWidget({
-   'loadingText':'Menampilkan Artikel...'
-});</script>
+
+<script>
+/*! Related Post Widget for Blogger by Taufik Nurrohman => http://gplus.to/tovic */
+var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>Baca juga artikel menarik lainnya:</h4>",widgetStyle:1,homePage:"https://www.flashponsel.com/",numPosts:7,summaryLength:370,titleLength:"auto",thumbnailSize:200,noImage:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVMAAACtCAMAAAA6emybAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAxhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDM0MiwgMjAxMC8wMS8xMC0xODowNjo0MyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4RDFBNjg0Njk3MUUxMUU2QkE1MERDOUVFMUU2MzVDMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4RDFBNjg0Nzk3MUUxMUU2QkE1MERDOUVFMUU2MzVDMCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjhEMUE2ODQ0OTcxRTExRTZCQTUwREM5RUUxRTYzNUMwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjhEMUE2ODQ1OTcxRTExRTZCQTUwREM5RUUxRTYzNUMwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+eAg7WAAAAaRQTFRFJ1l6UXuUT3qTU32VJlh5OmiFUHqTTXiRJFZ4JVh5UnuUKlt8OWiEL19/UnyVU3yVJVd5TXiSJlh6UnyUJll6THeRLF19Ll9+THeQTniSS3aQKFp6KVp7JVd4U32WPGqHSnWPMmKAMmKBL2B/TnmSVH2WN2aDN2aEKFp7SXWPLV59PmuIQ3CLJ1l5O2mGNGOCQW6KJ1p6LV5+PGqGJ1h5LF59RnKNMWF/UHuUOWiFQG6JKFl6SHOOKlx8NWSCLl5+TniRSHSPSHSOOGeES3eQR3KONGOBJFd4NGSCPGuHQm+KOmmGPmyIUXuTP2yJPWuHM2OBMWGAQW+KIlV3SHONI1V3S3aRU3uUUn2VVHyVUXyVPWqHT3mSS3aPUnuVLFx9OmiERHGMQ2+LRXGMOGeDMGB/O2mHLF1+NGWDOWeFQ3CMMGCAQW2KQ2+KK119SXSOLFx8Qm+LM2OCUHqUMWKALl59NmWDO2qHN2WEJ1l7VX6XRnGNN2eDR3OOKVt7RXGNK1x8UHuTKVt8SnaPQW6JNWWDTXeRRXKMKlt7RXCMPmyJTHiRpV9NowAAA/VJREFUeNrs3ed3m1YYgHFhbpSA7QtmaNiS997ZO272nh0ZnRlt9ujM6G4z2uSfjlFkGcUGX1F0jnv8PN/lD7/zwr1wAGcyRERERERERERERERERERERERERERERERERETUaMWW5lVYo6ZZrXl9sEZNW5pouh5TTP8Hph2YMqeYrnpTS08viel8ZnaibV1atc1amAamc0dFWpVv6JgGpu1Gan9StOms+80yZU4xxRRTTDHFFFNMMU3J1DNs2xCYpmfqOeOPX5/p+W6jg2lKpmL0ZNGV0tXubBWYpmPaNTHvGaS/ehSPKjBVMzUO1u4qD52NXbq29P3GPRQVU+/pgcsLprKwKWZQy+3FdQJTBVO7vcOqDar7U7SpmJp9tqeEqYrpvtNuzVQfiTEddi99dt7mfKpgen4wZPok0tTJd0qtexdrlMr5tDS2eOwPDkSZiq5JqWlWZ05guvK6Lz6tmQ499yJ+5205+GflhPsCUwVTb+/1oXco3YcG7Ijf2eOfVOTlR7sxVbmO+nLS1KWU+ufbI0+mrSeqcNl+wbqvcL0vNh65tm3/v9Ohc6Wov/QXI7Ut7BmbOVUwzTjzmF0ZEZrAmSN1bAP+wsMmcskqhanS/VOR71jfNxVa8y/UljHzyjcOpglMMydkd2dfbR6Nr0xzcQv7e0lg2rCpfS54Sq2zrzqQxo+9Mvz83g8Gpo2aitJhWTlznvO8ypF/3wqTyl0Opg2b9rwbS90/FpgawzvM+ueh8wLTxkyNgWL1ULf8Y05G5Hqt+md35e0ypgqmi/tR76+rX9T0/Bmxe9Z973loq7cVUwXTfV8vbOXFcIhPL2yfWfKMuWzptzFd0XTvYO+4Xd2avgwv8tb+v90lqEP3BKYrmdo90jpQuT7yMqfMOkS5lFS7+Ca8SmG67PV+riA1/dfc/KTa/d+bK79hYk073EOJNy1vDlSsPVvLmdI2qfDWjjw8ypzGmhrBmAZSY3l7Wqq9C3XLwDTO1Dle3YB2j40U1EzlBYFpjKmX9xfWIZk9rTam0t9kYBozp6dk4+9ByuMC00hTI+8nMLUe/iMwjZzTszLRG7t3DUwjTMWcbyUhld9OYRph6my2kr1ZPphzMF3e9IHvJjM1TwpMlzW1exKOqWYd+oNr02VNj/7sZpO1o1i948ecvn/styZvlGM/5l7ffwpTTDHFFNOUTdf6XurmhxvS6uNfmNPAVJvYmdr3pXZOSuaU76A1x5Tv9WGKKaaYrl5TvtPLnGKKKaaYYsq6jylziimmmGKKKes+pphiyvkUU0wxxRRTTDFNP/4Pb/rx/6KJiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiFZXbwUYAFkdcnret5fqAAAAAElFTkSuQmCC",containerId:"related-post",newTabLink:false,moreText:"Baca Selengkapnya",callBack:function(){}};for(var f in relatedPostConfig){d[f]=(relatedPostConfig[f]=="undefined")?d[f]:relatedPostConfig[f]}var j=function(a){var b=m.createElement("script");b.type="text/javascript";b.src=a;k.appendChild(b)},o=function(b,a){return Math.floor(Math.random()*(a-b+1))+b},l=function(a){var p=a.length,c,b;if(p===0){return false}while(--p){c=Math.floor(Math.random()*(p+1));b=a[p];a[p]=a[c];a[c]=b}return a},e=(typeof labelArray=="object"&&labelArray.length>0)?"/-/"+l(labelArray)[0]:"",h=function(b){var c=b.feed.openSearch$totalResults.$t-d.numPosts,a=o(1,(c>0?c:1));j(d.homePage.replace(/\/$/,"")+"/feeds/posts/summary"+e+"?alt=json-in-script&orderby=updated&start-index="+a+"&max-results="+d.numPosts+"&callback=showRelatedPost")},g=function(z){var s=document.getElementById(d.containerId),x=l(z.feed.entry),A=d.widgetStyle,c=d.widgetTitle+'<ul class="related-post-style-'+A+'">',b=d.newTabLink?' target="_blank"':"",y='<span style="display:block;clear:both;"></span>',v,t,w,r,u;if(!s){return}for(var q=0;q<d.numPosts;q++){if(q==x.length){break}t=x[q].title.$t;w=(d.titleLength!=="auto"&&d.titleLength<t.length)?t.substring(0,d.titleLength)+"&hellip;":t;r=("media$thumbnail"in x[q]&&d.thumbnailSize!==false)?x[q].media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/, "/s"+d.thumbnailSize):d.noImage;u=("summary"in x[q]&&d.summaryLength>0)?x[q].summary.$t.replace(/<br ?\/?>/g," ").replace(/<.*?>/g,"").replace(/[<>]/g,"").substring(0,d.summaryLength)+"&hellip;":"";for(var p=0,a=x[q].link.length;p<a;p++){v=(x[q].link[p].rel=="alternate")?x[q].link[p].href:"#"}if(A==2){c+='<li><a href="'+v+'" title="'+t+'"'+b+' target="_blank"><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'"></a><a class="related-post-item-title" title="'+t+'" href="'+v+'"'+b+" target='_blank'>"+w+'</a><span class="related-post-item-summary"><span class="related-post-item-summary-text">'+u+'</span> <a href="'+v+'" class="related-post-item-more"'+b+">"+d.moreText+"</a></span>"+y+"</li>"}else{if(A==3||A==4){c+='<li class="related-post-item" tabindex="0"><a class="related-post-item-title" href="'+v+'"'+b+' target="_blank"><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'"></a><div class="related-post-item-tooltip"><a class="related-post-item-title" title="'+t+'" href="'+v+'"'+b+" target='_blank'>"+w+"</a></div>"+y+"</li>"}else{if(A==5){c+='<li class="related-post-item" tabindex="0"><a class="related-post-item-wrapper" href="'+v+'" title="'+t+'"'+b+' target="_blank"><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'"><span class="related-post-item-tooltip">'+w+"</span></a>"+y+"</li>"}else{if(A==6){c+='<li><a class="related-post-item-title" title="'+t+'" href="'+v+'"'+b+" target='_blank'>"+w+'</a><div class="related-post-item-tooltip"><img alt="" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'"><span class="related-post-item-summary"><span class="related-post-item-summary-text">'+u+"</span></span>"+y+"</div></li>"}else{c+='<li><a title="'+t+'" href="'+v+'"'+b+" target='_blank'>"+w+"</a></li>"}}}}}s.innerHTML=c+="</ul>"+y;d.callBack()};randomRelatedIndex=h;showRelatedPost=g;j(d.homePage.replace(/\/$/,"")+"/feeds/posts/summary"+e+"?alt=json-in-script&orderby=updated&max-results=0&callback=randomRelatedIndex")})(window,document,document.getElementsByTagName("head")[0]);
+</script>
+
 </body>
 </html>
