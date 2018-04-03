@@ -1,58 +1,19 @@
-<b:if cond='data:blog.pageType == &quot;item&quot;'>
-<style type='text/css'>
-/*<![CDATA[*/
-.post-body .inline_wrapper{width:100%;height:auto;text-align:center;margin:10px 0;padding:0}
-.post-body .inline_wrapper .middle_post{width:calc(100% - 220px);display:block;float:right;}
-.post-body .inline_wrapper .middle_post span{color:#999;font-size:10px;margin:0 auto 5px;display:block}
-.related-post-by-title{width:200px;margin:15px 0;display:block;float:left;position:relative}
-.related-post-by-title ul{padding:10px 17px 17px 30px;border:1px solid #ddd;margin:0;text-align:left;}
-.related-post-by-title h4{display:inline-block;background:#fff;padding:0 15px;margin:0;position:absolute;top:-12px;left:15px;font-size:15px;font-weight:700}
-.related-post-by-title li {margin-top:10px;line-height:1.2}
-.related-post-by-title li a{font-size:14px;font-weight:700;}
-.clear{display:block;clear:both}
-@media screen and (max-width:640px){.post-body .inline_wrapper .middle_post,.related-post-by-title{width:100%;float:none}
-.post-body .inline_wrapper .middle_post{height:300px;}
-}
-/*]]>*/
-</style>
-</b:if>
 
-<b:if cond='data:blog.pageType == &quot;item&quot;'>
-<div class='inline_wrapper' id='inline_wrapper'>
-<div class='middle_post'>
-  <span>Advertisement</span>
-<!-- kode Iklan letakkan di bawah ini -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Artikel Terkait</title>
+</head>
 
-  </div>
-<div class='related-post-by-title' id='related-post-by-title'>
+<body>
 <script type='text/javascript'>
 //<![CDATA[
-function related_results_labels(e){for(var t=0;t<e.feed.entry.length;t++){var l=e.feed.entry[t];relatedTitles[relatedTitlesNum]=l.title.$t;for(var r=0;r<l.link.length;r++)if("alternate"==l.link[r].rel){relatedUrls[relatedTitlesNum]=l.link[r].href,relatedTitlesNum++;break}}}function removeRelatedDuplicates(){for(var e=new Array(0),t=new Array(0),l=0;l<relatedUrls.length;l++)contains(e,relatedUrls[l])||(e.length+=1,e[e.length-1]=relatedUrls[l],t.length+=1,t[t.length-1]=relatedTitles[l]);relatedTitles=t,relatedUrls=e}function contains(e,t){for(var l=0;l<e.length;l++)if(e[l]==t)return!0;return!1}function printRelatedLabels(){var e=Math.floor((relatedTitles.length-1)*Math.random()),t=0;for(document.write("<ul>");t<relatedTitles.length&&4>t;)document.write('<li><a href="'+relatedUrls[e]+'">'+relatedTitles[e]+"</a></li>"),e<relatedTitles.length-1?e++:e=0,t++;document.write("</ul>"),document.write()}var relatedTitles=new Array,relatedTitlesNum=0,relatedUrls=new Array;
+var homePage = window.location.origin,numPosts = 7;
+function downloadJSAtOnload(){var d=document.createElement("script");d.src="https://cdn.rawgit.com/KompiAjaib/kompi-js/master/recent_post_with_thumbnail.js",document.body.appendChild(d)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
 //]]>
 </script>
-<h4>Baca juga:</h4>
-<b:loop values='data:post.labels' var='label'>
-<b:if cond='data:label.isLast != &quot;true&quot;'/>
-<b:if cond='data:blog.pageType == &quot;item&quot;'>
-<script expr:src='&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=related_results_labels&amp;max-results=4&quot;' type='text/javascript'/></b:if>
-</b:loop>
-<script type='text/javascript'>
-//<![CDATA[
-removeRelatedDuplicates(); printRelatedLabels();
-//]]>
-</script>
-</div>
-<div class='clear'/>
-  </div>
-</b:if>
-<b:if cond='data:blog.pageType == &quot;item&quot;'>
-<script type='text/javascript'>
-//<![CDATA[
-function insertAfter(addition,target) {var parent = target.parentNode;if (parent.lastChild == target) {parent.appendChild(addition); } else {parent.insertBefore(addition,target.nextSibling);}}
-var middleads = document.getElementById(&quot;inline_wrapper&quot;);var target = document.getElementById(&quot;widget-middle&quot;);
-var opsi1 = target.getElementsByTagName(&quot;br&quot;);if (opsi1.length &gt; 0){insertAfter(middleads,opsi1[3]);}
-var opsi2 = target.getElementsByTagName(&quot;blockquote&quot;);if (opsi2.length &gt; 0){insertAfter(middleads,opsi2[0]);}
-var opsi3 = target.getElementsByTagName(&quot;h2&quot;);if (opsi3.length &gt; 0){insertAfter(middleads,opsi3[0]);}
-//]]>
-</script>
-</b:if>
+ <ul id="recent-posts"></ul> 
+</body>
+
+</html>
