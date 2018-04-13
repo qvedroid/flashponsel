@@ -4,7 +4,46 @@
 <meta charset="UTF-8">
 <title>show years</title>
 </head>
-
+  <style>
+.content-wrapper{position:relative;max-width:1024px;margin:0 auto}
+  @media screen and (max-width:1024px){
+#menu,#menu ul,.header-wrapper{width:100%}
+.main-wrapper{width:66.6%}
+.post h1,.post h2{padding-right:15px}
+.content-wrapper{position:relative;max-width:98%;margin:0 auto}
+}
+@media screen and (max-width: 800px){
+.content-wrapper{position:relative;width:100%;margin:0 auto}
+#menu{width:100%}
+#search-box{width:55%}
+.headerpic-wrapper{width:100%;margin:0 auto}
+.header-wrapper{margin-right:0;width:100%}
+#header{text-align:center;width:100%;max-width:none}
+#header-inner{margin:10px}
+.main-wrapper{margin-left:0;width:100%;}
+#menu{position:relative}
+#menu ul{background:#fff;position:absolute;top:100%;left:0;z-index:3;height:auto;display:none;width:100%;}
+#menu ul.menus{width:100%;position:static;padding-left:20px;border:none;}
+#menu li{display:block;float:none;width:auto;border-top:1px solid #eee}
+#menu input,#menu label{position:absolute;top:15px;left:0;color:#444;display:block;text-transform:uppercase}
+#menu input{z-index:4}
+#menu input:checked + label{color:#bbb}
+#menu input:checked ~ ul{display:block}
+#header2{text-align:center;width:100%}
+.sidebar-wrapper{float:none;margin:0 auto}
+}
+@media screen and (max-width: 760px){
+.outer-wrapper{padding:0}
+.main-wrapper{margin-right:0;width:100%;min-height:0}
+}
+@media screen and (max-width: 480px){
+#header img{width:100%}
+.header-wrapper{padding-left:0;}
+.thumbnail-area{width:100%;height:auto;margin-bottom:20px}
+.summary,.postag,.post h2{padding: 0 0 0 20px;}
+.post-meta{display:none}
+}
+    </style>
 <body>
 <div class='content-wrapper'>
 &#169; 2015-<script type="text/javascript">document.write(new Date().getFullYear());</script>. <a class='flashponsel' expr:href='data:blog.homepageUrl' expr:title='data:blog.title'><data:blog.title/> - Modifikasi Ponsel.</a> Proudly Powered by <b>Blogger</b> <br/>
