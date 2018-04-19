@@ -1,4 +1,12 @@
-/* Recent By Label */
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Artikel Bedasarkan Label</title>
+</head>
+
+<body>
+  /* Recent By Label */
 .recent-by-tag img {float:left;width:60px;height:60px;margin-right:10px;margin-bottom:17px}
 .recent-by-tag li {clear:both;line-height:1.3em !important}
 .recent-by-tag li a{list-style:none;color:#555;font-weight:bold;font-size:14px !important}
@@ -15,5 +23,8 @@ function rcentbytag(e){document.write('<ul class="recent-by-tag">');for(var t=0;
 </script>
 
 <script>
-var mql = window.matchMedia('screen and (min-width: 992px)');if (mql.matches){document.write("<script src=\"/feeds/posts/default/-/SEO?orderby=updated&amp;alt=json-in-script&amp;callback=rcentbytag\"><\/script>");}
+var mql = window.matchMedia('screen and (min-width: 992px)');if (mql.matches){document.write("<script src=\"/feeds/posts/default/-/modifikasiponsel?orderby=updated&amp;alt=json-in-script&amp;callback=rcentbytag\"><\/script>");}
 </script>
+</body>
+
+</html>
