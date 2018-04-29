@@ -1,0 +1,13 @@
+<script type="text/javascript">
+var acakarray = new Array();var l=0;var flag;
+var numofpost=5;function randomposts(json){
+var total = parseInt(json.feed.openSearch$totalResults.$t,10);
+for(i=0;i < numofpost;){flag=0;acakarray.length=numofpost;l=Math.floor(Math.random()*total);for(j in acakarray){if(l==acakarray[j]){ flag=1;}}
+if(flag==0&&l!=0){acakarray[i++]=l;}}document.write('<ul>');
+for(n in acakarray){ var p=acakarray[n];var entry=json.feed.entry[p-1];
+for(k=0; k < entry.link.length; k++){if(entry.link[k].rel=='alternate'){var item = "<li>" + "<a href=" + entry.link[k].href + ">" + entry.title.$t + "</a> </li>";
+document.write(item);}}
+}document.write('</ul>');}
+</script>
+
+<script src="/feeds/posts/default/-/Label?alt=json-in-script&start-index=1&max-results=1000&callback=randomposts" type="text/javascript"></script>
