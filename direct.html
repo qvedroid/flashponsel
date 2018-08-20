@@ -1,0 +1,12 @@
+<script type="text/javascript">
+var waktu = 12;
+setInterval(function() {
+waktu–;
+if(waktu < 0) {
+window.location = ‘https://www.paketwisatajogjamurah.com/’;
+}else{
+document.getElementById("countdown").innerHTML = waktu;
+}
+}, 1000);
+</script>
+<span id="countdown">10</span>
